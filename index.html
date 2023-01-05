@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Password-Generator</title>
+</head>
+<body>
+    
+    <section>
+        <div class="container">
+          <form id="pg-form">
+            <div class="result">
+              <input type="text" id="result" placeholder="Min 8 Char">
+              <div class="clipboard">
+                <i class="fa-solid fa-clipboard"></i>
+              </div>
+            </div>
+            <div>
+              <div class="field">
+                <label for="length">Length</label>
+                <input type="number" id="length" value="10" min="8">
+              </div>
+              <div class="field">
+                <label for="capital">Capital Letter</label>
+                <input type="checkbox" id="capital" class="toggle">
+              </div>
+              <div class="field">
+                <label for="small">Small Letter</label>
+                <input type="checkbox" id="small" class="toggle">
+              </div>
+              <div class="field">
+                <label for="number">Number</label>
+                <input type="checkbox" id="number" class="toggle">
+              </div>
+              <div class="field">
+                <label for="symbol">Special Char</label>
+                <input type="checkbox" id="symbol" class="toggle">
+              </div>
+            </div>
+            <button type="submit">Generate Password</button>
+          </form>
+        </div>
+      </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
